@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <script src="/faye.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"> </script>
+    <script src="/demo.js"></script>
+    <title>Faye Demo</title>
+  </head>
+  <body>
+    <div id="channels">
+      <div id="main" class="channel">
+        <table class="messages" id="">
+          <h1>Default Channel</h1><hr>
+          <tr>
+            <th>Channel</th>
+            <th>Message</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <form id="channel">
+      Join a channel: <input type="text" id="channel">
+    </form>
+    <form id="message">
+      send a message: 
+      <select name="sendTo" id="channel">
+        <option>default</option>
+      </select>
+      <input type="text" id="message">
+    </form>
+  </body>
+</html>
